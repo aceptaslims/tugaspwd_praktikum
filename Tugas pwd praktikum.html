@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }
+        fieldset {
+            width: 600px;
+            margin-bottom: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <fieldset>
+        <legend><b>Absensi Mahasiswa Teknik Informatika</b></legend>
+        <table>
+            <tr>
+                <th rowspan="2">NO</th>
+                <th rowspan="2">NPM</th>
+                <th rowspan="2">NAMA</th>
+                <th colspan="7">PERTEMUAN</th>
+            </tr>
+            <tr>
+                <th>1<br>9-Feb</th>
+                <th>2<br>16-Feb</th>
+                <th>3<br>23-Feb</th>
+                <th>4<br>2-Mar</th>
+                <th>5<br>9-Mar</th>
+                <th>6<br>16-Mar</th>
+                <th>7<br>23-Mar</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>5520124033</td>
+                <td>Acep Taslim Suherman</td>
+                <td>v</td><td>v</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>5520124037</td>
+                <td>Dude Rezky</td>
+                <td>v</td><td>v</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>5520124039</td>
+                <td>Egi jaelani</td>
+                <td>v</td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <h3>Form Mahasiswa</h3>
+
+    <form>
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+            <label>Nama</label> : <input type="text"><br><br>
+            <label>NPM</label> : <input type="text"><br><br>
+            <label>Kelas</label> : 
+            <select>
+                <option>-</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select><br><br>
+            <label>Jenis Kelamin</label> : 
+            <input type="radio" name="jk"> Pria
+            <input type="radio" name="jk"> Wanita
+        </fieldset>
+
+        <fieldset>
+            <legend>Tempat Tinggal Mahasiswa</legend>
+            <label>Alamat</label> : <textarea rows="3" cols="30"></textarea><br><br>
+            <label>Kecamatan</label> : <input type="text"><br><br>
+            <label>Kabupaten/Kotamadya</label> : <input type="text"><br><br>
+            <label>Provinsi</label> : <input type="text"><br><br>
+            <label>Kode Pos</label> : <input type="text">
+        </fieldset>
+
+        <fieldset>
+            <legend>Lain-lainnya</legend>
+            <label>Bahasa Pemrograman</label> :
+            <input type="checkbox"> C / C++
+            <input type="checkbox"> Go Lang
+            <input type="checkbox"> Python
+            <input type="checkbox"> Lainnya <br>
+            <label></label>
+            <input type="checkbox"> PHP
+            <input type="checkbox"> Javascript
+            <input type="checkbox"> Ruby
+            <br><br>
+            <label>Kegiatan</label> :
+            <input type="checkbox"> Organisasi Kemahasiswaan
+            <input type="checkbox"> Bidang Olahraga
+            <input type="checkbox"> Lainnya <br>
+            <label></label>
+            <input type="checkbox"> Organisasi di Luar Kampus
+            <input type="checkbox"> Bidang Seni
+        </fieldset>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
